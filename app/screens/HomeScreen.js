@@ -179,7 +179,7 @@ export default function HomeScreen(props) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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',
+          'Authorization': `Bearer ${process.env.HUGGINGFACE_API_KEY}`
         },
         body: JSON.stringify({ inputs: translatedText }),
       });
